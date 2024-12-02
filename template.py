@@ -23,6 +23,20 @@ def part2(data):
 
 def parse(path):
     data = Path(path).read_text().splitlines()
+
+    # data = [(x, int(y)) for x, y in data]
+    # data = [[[int(x) for x in y] for y in line] for line in data]
+    # data = [[int(x) for x in line] for line in data]
+    # data = [[x.split(",") for x in line] for line in data]
+    # data = [int(x) for x in data]
+    # data = [line.replace("-", "_") for line in data]
+    # data = [line.split(",") for line in data]
+    # data = [line.strip("\n") for line in data]
+    # data = [line[:-1] for line in data]
+    # data = [re.sub(r" -> ", r",", line) for line in data]
+    # data = [re.sub(r" \| ", r" ", line) for line in data]
+    # data = [x[0] for x in data]
+
     return data
 
 
